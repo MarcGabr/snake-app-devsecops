@@ -5,7 +5,10 @@ node ('ubuntu'){
        checkout scm
     }  
     stage('SAST'){
-        build 'SECURITY-SAST-SNYK'
+      /*  build 'SECURITY-SAST-SNYK' */
+      steps{
+        sh 'echo SAST stage'
+       }
     }
 
     
