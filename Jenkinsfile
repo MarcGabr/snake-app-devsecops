@@ -6,9 +6,9 @@ node ('ubuntu'){
     }  
     stage('SAST'){
       /*  build 'SECURITY-SAST-SNYK' */
-      steps{
-        echo 'SAST stage'
-       }
+      steps { 
+         sh 'make' 
+      }
     }
 
     
